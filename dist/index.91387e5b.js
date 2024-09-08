@@ -142,10 +142,10 @@
       this[globalName] = mainExports;
     }
   }
-})({"8MvuV":[function(require,module,exports) {
+})({"6vLTi":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
-var HMR_PORT = null;
+var HMR_PORT = 52333;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
@@ -599,7 +599,7 @@ const buttonHandlerFunction = function(event) {
 };
 init();
 
-},{"./views/InputFieldsView":"9KCRv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./views/ListView":"3NMKT"}],"9KCRv":[function(require,module,exports) {
+},{"./views/InputFieldsView":"9KCRv","./views/ListView":"3NMKT","@parcel/transformer-js/src/esmodule-helpers.js":"kuXmL"}],"9KCRv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _generalView = require("./GeneralView");
@@ -639,7 +639,20 @@ class InputFields {
 }
 exports.default = new InputFields();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../model":"76DFJ","./GeneralView":"74Y90"}],"gkKU3":[function(require,module,exports) {
+},{"./GeneralView":"74Y90","../model":"76DFJ","@parcel/transformer-js/src/esmodule-helpers.js":"kuXmL"}],"74Y90":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+class ListItem {
+    constructor(name, date, priority, id){
+        this.name = name;
+        this.date = date;
+        this.priority = priority;
+        this.id = id;
+    }
+}
+exports.default = ListItem;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"kuXmL"}],"kuXmL":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -680,20 +693,7 @@ const state = {
 };
 exports.default = state;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"74Y90":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-class ListItem {
-    constructor(name, date, priority, id){
-        this.name = name;
-        this.date = date;
-        this.priority = priority;
-        this.id = id;
-    }
-}
-exports.default = ListItem;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3NMKT":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"kuXmL"}],"3NMKT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _model = require("../model");
@@ -752,6 +752,6 @@ class ListView {
 }
 exports.default = new ListView();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../model":"76DFJ"}]},["8MvuV","goSFh"], "goSFh", "parcelRequireb779")
+},{"../model":"76DFJ","@parcel/transformer-js/src/esmodule-helpers.js":"kuXmL"}]},["6vLTi","goSFh"], "goSFh", "parcelRequireb779")
 
 //# sourceMappingURL=index.91387e5b.js.map
